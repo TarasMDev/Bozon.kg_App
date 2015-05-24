@@ -8,19 +8,18 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class MainActivity extends ActionBarActivity {
+public class Register extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_login);
+        setContentView(R.layout.activity_register);
     }
-
     //Action for buttons
-    public void goToRegisterView(View v){
+    public void goToLoginView(View v){
         switch (v.getId()) {
-            case R.id.btnLinkToRegisterScreen:
-                Intent intent = new Intent(this, Register.class);
+            case R.id.btnLinkToLoginScreen:
+                Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
                 break;
             default:
@@ -28,9 +27,9 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 
-    public void goHomeScreenView(View v){
+    public void goToHomeScreenView(View v){
         switch (v.getId()) {
-            case R.id.btnLogin:
+            case R.id.btnRegister:
                 Intent intent = new Intent(this, Main_screen.class);
                 startActivity(intent);
                 break;
@@ -42,7 +41,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_register, menu);
         return true;
     }
 

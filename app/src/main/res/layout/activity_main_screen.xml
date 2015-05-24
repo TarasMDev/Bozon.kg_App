@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/bg_login"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="bozon.kg.app.Main_screen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="BOZON.KG"
+        android:id="@+id/text_logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignBottom="@+id/text_logo" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageButton"
+        android:layout_toStartOf="@+id/imageButton"
+        android:layout_marginTop="49dp"
+        android:layout_alignRight="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageButton"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Личный Кабинет"
+            android:background="@color/btn_login_bg"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.30" />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="#ea4c88"
+            android:text="Категории"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.30" />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Продать товар"
+            android:id="@+id/button3"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.30" />
+
+    </LinearLayout>
+</RelativeLayout>
