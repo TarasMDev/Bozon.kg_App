@@ -35,5 +35,8 @@
         android:id="@+id/button4"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:textStyle="bold|normal"
+        android:textSize="24sp"
+        android:background="@drawable/backgbutton"
         android:layout_marginBottom="51dp" />
 </RelativeLayout>

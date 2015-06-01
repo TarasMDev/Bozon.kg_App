@@ -21,7 +21,7 @@ public class Category extends ActionBarActivity {
         final String[] categoryTest = new String[] {
                 "Computers", "Phones", "TV", "Processors", "Shoes",
                 "clothing", "Food", "Category_1", "Category_2", "Category_3",
-                "Category_4", "Category_5", "Категория_6"
+                "Category_4", "Category_5", "Категория6"
         };
 
 // используем адаптер данных

@@ -22,11 +22,11 @@ public class NotificationBozon extends ActionBarActivity {
         final String[] notificationTest = new String[] {
                 "Notification_1", "Notification_2", "Notification_3", "Notification_4", "Notification_5",
                 "Notification_6", "Notification_7", "Notification_8", "Notification_9", "Notification_10",
-                "Notification_11", "Notification_12", "Уведомление_13"
+                "Notification_11", "Notification_12"
         };
 
 // используем адаптер данных
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,	android.R.layout.simple_list_item_2,notificationTest);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,	android.R.layout.simple_list_item_1,notificationTest);
 
         listView1.setAdapter(adapter);
     }
