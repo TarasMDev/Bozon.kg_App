@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -6,62 +7,74 @@
     android:background="@color/bg_login"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context="bozon.kg.app.Main_screen">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="BOZON.KG"
-        android:id="@+id/text_logo"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:id="@+id/imageButton"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:src="@mipmap/ic_launcher"
-        android:layout_alignBottom="@+id/text_logo" />
+        android:background="@drawable/ic_message_alert"
+        android:onClick="goToNotificationScreenView" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/imageButton"
         android:layout_toStartOf="@+id/imageButton"
-        android:layout_marginTop="49dp"
         android:layout_alignRight="@+id/imageButton"
         android:layout_alignEnd="@+id/imageButton"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:layout_below="@+id/imageButton">
 
-        <Button
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="Личный Кабинет"
-            android:background="@color/btn_login_bg"
-            android:id="@+id/button"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="0.30" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="379dp">
 
-        <Button
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:background="#ea4c88"
-            android:text="Категории"
-            android:id="@+id/button2"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="0.30" />
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="#ff5455ea"
+                android:text="Категории"
+                android:id="@+id/button2"
+                android:layout_gravity="right"
+                android:layout_weight="0.30"
+                android:textStyle="bold|italic"
+                android:textSize="24sp"
+                android:onClick="goToCategoryScreenView" />
 
-        <Button
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:text="Продать товар"
-            android:id="@+id/button3"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="0.30" />
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Личный Кабинет"
+                android:background="#ffea6c1a"
+                android:id="@+id/button"
+                android:layout_weight="0.30"
+                android:textStyle="bold|italic"
+                android:textSize="24sp"
+                android:onClick="goToMyProfileScreenView" />
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Продать товар"
+                android:background="#ffea9127"
+                android:id="@+id/button3"
+                android:layout_weight="0.30"
+                android:textStyle="bold|italic"
+                android:textSize="24sp"
+                android:onClick="goToSellGoodsScreenView" />
+        </TableLayout>
 
     </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@mipmap/ic_launcher" />
+
 </RelativeLayout>

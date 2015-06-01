@@ -2,15 +2,19 @@
     <string name="app_name">Bozon.kg</string>
     <string name="action_settings">Настройки</string>
     <string name="title_activity_register">Регистрация</string>
-    <string name="title_activity_login">Вход</string>
+    <string name="title_activity_login">BOZON.KG</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Пароль</string>
     <string name="hint_name">Имя</string>
-    <string name="btn_login">ВХОД</string>
+    <string name="btn_login">Вход</string>
     <string name="btn_register">РЕГИСТРАЦИЯ</string>
     <string name="btn_link_to_register">Зарегистрироваться</string>
     <string name="btn_link_to_login">Уже зарегистрирован! Войти.</string>
     <string name="welcome">Welcome</string>
     <string name="btn_logout">Выйти</string>
     <string name="name">Имя</string>
+    <string name="title_activity_my_profile">Личный кабинет</string>
+    <string name="title_activity_notification">Уведомления</string>
+    <string name="title_activity_category">Категории Товаров</string>
+    <string name="title_activity_sell_goods">Продать товар</string>
 </resources>

@@ -24,6 +24,22 @@
             android:name=".Main_screen"
             android:label="@string/title_activity_login" >
         </activity>
+        <activity
+            android:name=".my_profile"
+            android:label="@string/title_activity_my_profile" >
+        </activity>
+        <activity
+            android:name=".NotificationBozon"
+            android:label="@string/title_activity_notification" >
+        </activity>
+        <activity
+            android:name=".Category"
+            android:label="@string/title_activity_category" >
+        </activity>
+        <activity
+            android:name=".Sell_goods"
+            android:label="@string/title_activity_sell_goods" >
+        </activity>
     </application>
 
 </manifest>
