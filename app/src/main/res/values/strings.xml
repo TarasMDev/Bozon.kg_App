@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Bozon.kg</string>
+    <string name="app_name">BOZON</string>
     <string name="action_settings">Настройки</string>
     <string name="title_activity_register">Регистрация</string>
     <string name="title_activity_login">BOZON.KG</string>
@@ -17,4 +17,9 @@
     <string name="title_activity_notification">Уведомления</string>
     <string name="title_activity_category">Категории Товаров</string>
     <string name="title_activity_sell_goods">Продать товар</string>
+    <string name="action_notif">notif</string>
+    <string name="title_activity_my__private__profile">My_Private_Profile</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_messages">Messages</string>
 </resources>

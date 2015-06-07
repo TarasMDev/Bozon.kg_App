@@ -14,42 +14,22 @@ public class Category extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
-        // получаем экземпляр элемента ListView
+        // РќРѕРІС‹Р№ Р»РёСЃС‚РІСЊСЋ ListView
         ListView listView = (ListView)findViewById(R.id.listView2);
 
-// определяем массив типа String
+// РљР°С‚РµРіРѕСЂРёРё String
         final String[] categoryTest = new String[] {
                 "Computers", "Phones", "TV", "Processors", "Shoes",
                 "clothing", "Food", "Category_1", "Category_2", "Category_3",
-                "Category_4", "Category_5", "Категория6"
+                "Category_4", "Category_5", "РљР°С‚РµРіРѕСЂРёСЏ_С‚Р°РєР°СЏ6"
         };
 
-// используем адаптер данных
+// РђРґР°РїС‚РµСЂ
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,	android.R.layout.simple_list_item_1,categoryTest);
 
         listView.setAdapter(adapter);
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_category, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }

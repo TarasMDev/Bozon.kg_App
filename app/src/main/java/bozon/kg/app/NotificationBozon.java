@@ -15,41 +15,21 @@ public class NotificationBozon extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification_bozon);
 
-        // получаем экземпляр элемента ListView
+        // ListView
         ListView listView1 = (ListView)findViewById(R.id.listView);
 
-// определяем массив типа String
+//  String
         final String[] notificationTest = new String[] {
                 "Notification_1", "Notification_2", "Notification_3", "Notification_4", "Notification_5",
                 "Notification_6", "Notification_7", "Notification_8", "Notification_9", "Notification_10",
                 "Notification_11", "Notification_12"
         };
 
-// используем адаптер данных
+// РђРґР°РїС‚РµСЂ
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,	android.R.layout.simple_list_item_1,notificationTest);
 
         listView1.setAdapter(adapter);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_notification, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }

@@ -61,7 +61,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
-            android:background="#ea4c88"
+            android:background="#ffea6c1a"
             android:text="@string/btn_register"
             android:textColor="@color/white"
             android:onClick="goToHomeScreenView" />

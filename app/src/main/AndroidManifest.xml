@@ -25,7 +25,7 @@
             android:label="@string/title_activity_login" >
         </activity>
         <activity
-            android:name=".my_profile"
+            android:name=".My_profile_bozon"
             android:label="@string/title_activity_my_profile" >
         </activity>
         <activity
@@ -39,6 +39,14 @@
         <activity
             android:name=".Sell_goods"
             android:label="@string/title_activity_sell_goods" >
+        </activity>
+        <activity
+            android:name=".My_Private_Profile"
+            android:label="@string/title_activity_my__private__profile" >
+        </activity>
+        <activity
+            android:name=".Messages"
+            android:label="@string/title_activity_messages" >
         </activity>
     </application>
 
