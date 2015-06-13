@@ -75,7 +75,7 @@ public class Main_screen extends ActionBarActivity {
         }
     }
 
-   
+
     public void goToCategoryScreenView(View v){
         switch (v.getId()) {
             case R.id.button2:

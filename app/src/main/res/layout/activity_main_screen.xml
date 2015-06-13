@@ -4,7 +4,7 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#ffeae7c8"
+    android:background="#0c3054"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context="bozon.kg.app.Main_screen"
     >
 
@@ -25,12 +25,12 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="Мой BOZON"
-                android:background="#ffea6c1a"
+                android:background="@drawable/buttons_selector"
                 android:id="@+id/button"
                 android:layout_weight="0.30"
 
                 android:textSize="14sp"
-
+                android:textColor="@color/abc_primary_text_disable_only_material_dark"
                 android:onClick="goToMyProfileScreenView"
                 android:layout_alignBottom="@+id/button2"
                 android:layout_toRightOf="@+id/button2"
@@ -45,9 +45,11 @@
             <Button
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="#ff5455ea"
+                android:background="@drawable/buttons_selector"
                 android:text="Категории"
+                android:textColor="@color/abc_primary_text_disable_only_material_dark"
                 android:id="@+id/button2"
+                android:paddingRight="6dp"
                 android:layout_gravity="right"
                 android:layout_weight="0.30"
 
@@ -63,10 +65,11 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:text="Продать товар"
-                android:background="#ffea9127"
+                android:paddingLeft="6dp"
+                android:background="@drawable/buttons_selector"
                 android:id="@+id/button3"
                 android:layout_weight="0.30"
-
+                android:textColor="@color/abc_primary_text_disable_only_material_dark"
                 android:textSize="14sp"
                 android:onClick="goToSellGoodsScreenView"
                 android:layout_alignBottom="@+id/button2"
@@ -89,6 +92,11 @@
         android:layout_alignEnd="@+id/tableLayout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:paddingBottom="2dp"
+        android:drawableLeft="@drawable/ic_message_alert"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:background="@drawable/buttons_selector"
         android:onClick="goToMessagesView" />
 
     <Button
@@ -101,6 +109,10 @@
         android:layout_alignEnd="@+id/button5"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:drawableLeft="@drawable/ic_clipboard_account"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:background="@drawable/buttons_selector"
         android:onClick="goToPrivateProfileView" />
 
 

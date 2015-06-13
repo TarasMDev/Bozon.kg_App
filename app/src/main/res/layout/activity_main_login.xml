@@ -5,22 +5,18 @@
     android:background="@color/bg_login"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="10dp" >
+    android:padding="10dp"
+    android:weightSum="1"
+    >
 
-    TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BOZON.KG"
-        android:id="@+id/title_app_logo"
-        android:layout_gravity="center_horizontal" />
+
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:orientation="vertical"
         android:paddingLeft="20dp"
-        android:paddingRight="20dp" >
+        android:paddingRight="20dp">
 
         <EditText
             android:id="@+id/email"
@@ -73,13 +69,53 @@
             android:textColor="@color/white"
             android:textSize="15dp"
             android:onClick="goToRegisterView" />
+
     </LinearLayout>
 
-    TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ver. 0.1"
-        android:id="@+id/title_app_version"
-        android:layout_gravity="right" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Или"
+            android:id="@+id/textView3"
+            android:textColor="#fffff1ef"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:layout_alignTop="@+id/imageButton2"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/twitter_login_button"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton2"
+            android:layout_alignTop="@+id/imageButton3"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_alignEnd="@+id/textView3"
+            android:background="@drawable/gplus_login_button"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton3"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="41dp"
+            android:layout_marginEnd="41dp"
+            android:background="@drawable/facebook_login_button"/>
+    </RelativeLayout>
 </LinearLayout>
