@@ -14,5 +14,10 @@
     <color name="btn_login_bg">#eceef1</color>
     <color name="lbl_name">#333333</color>
     <color name="btn_logut_bg">#ff6861</color>
+    <!-- featured colors -->
+    <color name="deep_orange">#cf5607</color>
+    <color name="orange">#f17b00</color>
+    <color name="blue">#0c3054</color>
+
 
 </resources>

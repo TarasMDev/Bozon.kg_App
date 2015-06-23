@@ -2,7 +2,7 @@
     <string name="app_name">BOZON</string>
     <string name="action_settings">Настройки</string>
     <string name="title_activity_register">Регистрация</string>
-    <string name="title_activity_login">BOZON.KG</string>
+    <string name="title_activity_login">Добро пожаловать!</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Пароль</string>
     <string name="hint_name">Имя</string>
@@ -22,4 +22,5 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_messages">Messages</string>
+    <string name="title_activity_splash">BOZON</string>
 </resources>

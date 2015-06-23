@@ -8,112 +8,96 @@
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context="bozon.kg.app.Main_screen"
     >
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/tableLayout">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="Мой BOZON"
-                android:background="@drawable/buttons_selector"
-                android:id="@+id/button"
-                android:layout_weight="0.30"
-
-                android:textSize="14sp"
-                android:textColor="@color/abc_primary_text_disable_only_material_dark"
-                android:onClick="goToMyProfileScreenView"
-                android:layout_alignBottom="@+id/button2"
-                android:layout_toRightOf="@+id/button2"
-                android:layout_alignTop="@+id/button2"
-                android:layout_column="0" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/buttons_selector"
-                android:text="Категории"
-                android:textColor="@color/abc_primary_text_disable_only_material_dark"
-                android:id="@+id/button2"
-                android:paddingRight="6dp"
-                android:layout_gravity="right"
-                android:layout_weight="0.30"
-
-                android:textSize="14sp"
-                android:onClick="goToCategoryScreenView"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/button3"
-                android:layout_toEndOf="@+id/button3"
-                android:layout_marginTop="81dp"
-                android:layout_column="0" />
-
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="Продать товар"
-                android:paddingLeft="6dp"
-                android:background="@drawable/buttons_selector"
-                android:id="@+id/button3"
-                android:layout_weight="0.30"
-                android:textColor="@color/abc_primary_text_disable_only_material_dark"
-                android:textSize="14sp"
-                android:onClick="goToSellGoodsScreenView"
-                android:layout_alignBottom="@+id/button2"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignTop="@+id/button2"
-                android:layout_column="10" />
-        </TableRow>
-
-    </TableLayout>
-
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Сообщения"
         android:id="@+id/button5"
-        android:layout_below="@+id/tableLayout"
-        android:layout_marginTop="60dp"
-        android:layout_alignRight="@+id/tableLayout"
-        android:layout_alignEnd="@+id/tableLayout"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_marginTop="57dp"
         android:paddingBottom="2dp"
         android:drawableLeft="@drawable/ic_message_alert"
         android:gravity="left|center_vertical"
         android:textColor="@color/abc_primary_text_disable_only_material_dark"
         android:background="@drawable/buttons_selector"
-        android:onClick="goToMessagesView" />
+        android:onClick="goToMessagesView"
+        android:textSize="10dp"
+        android:typeface="sans"
+        android:width="10dp"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Мой Профиль"
         android:id="@+id/button6"
-        android:layout_below="@+id/button5"
-        android:layout_alignRight="@+id/button5"
-        android:layout_alignEnd="@+id/button5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:drawableLeft="@drawable/ic_clipboard_account"
         android:gravity="left|center_vertical"
         android:textColor="@color/abc_primary_text_disable_only_material_dark"
         android:background="@drawable/buttons_selector"
-        android:onClick="goToPrivateProfileView" />
+        android:onClick="goToPrivateProfileView"
+        android:textSize="10dp"
+        android:typeface="sans"
+        android:textStyle="italic"
+        android:layout_below="@+id/button5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:background="@drawable/buttons_selector"
+        android:text="Категории"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:id="@+id/button2"
+        android:paddingRight="6dp"
+        android:layout_gravity="right"
+        android:layout_weight="0.30"
+
+        android:textSize="10dp"
+        android:onClick="goToCategoryScreenView"
+        android:layout_marginTop="42dp"
+        android:layout_column="0"
+        android:typeface="sans"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:text="Продать товар"
+        android:paddingLeft="6dp"
+        android:background="@drawable/buttons_selector"
+        android:id="@+id/button3"
+        android:layout_weight="0.30"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:textSize="10dp"
+        android:onClick="goToSellGoodsScreenView"
+        android:layout_column="10"
+        android:textStyle="normal"
+        android:width="50dp"
+        android:typeface="sans"
+        android:layout_above="@+id/button5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:text="Мой BOZON"
+        android:background="@drawable/buttons_selector"
+        android:id="@+id/button"
+        android:layout_weight="0.30"
+
+        android:textSize="10dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:onClick="goToMyProfileScreenView"
+        android:layout_column="0"
+        android:typeface="sans"
+        android:layout_above="@+id/button5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
 
 
 </RelativeLayout>

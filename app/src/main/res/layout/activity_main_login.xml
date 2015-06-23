@@ -10,14 +10,27 @@
     >
 
 
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:background="@drawable/login_logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-64dp" />
 
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="365dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingLeft="20dp"
         android:paddingRight="20dp">
 
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp">
         <EditText
             android:id="@+id/email"
             android:layout_width="fill_parent"
@@ -30,7 +43,14 @@
             android:singleLine="true"
             android:textColor="@color/input_login"
             android:textColorHint="@color/input_login_hint" />
+        </android.support.design.widget.TextInputLayout>
 
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp">
         <EditText
             android:id="@+id/password"
             android:layout_width="fill_parent"
@@ -43,8 +63,12 @@
             android:singleLine="true"
             android:textColor="@color/input_login"
             android:textColorHint="@color/input_login_hint" />
+        </android.support.design.widget.TextInputLayout>
+
 
         <!-- Login Button -->
+
+        <!-- Link to Login Screen -->
 
         <Button
             android:id="@+id/btnLogin"
@@ -55,8 +79,6 @@
             android:text="@string/btn_login"
             android:textColor="@color/btn_login"
             android:onClick="goHomeScreenView" />
-
-        <!-- Link to Login Screen -->
 
         <Button
             android:id="@+id/btnLinkToRegisterScreen"
@@ -74,7 +96,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="92dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="-55dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -84,38 +108,37 @@
             android:id="@+id/textView3"
             android:textColor="#fffff1ef"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="44dp" />
+            android:layout_centerHorizontal="true" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageButton"
-            android:layout_alignTop="@+id/imageButton2"
-            android:layout_alignParentLeft="true"
             android:background="@drawable/twitter_login_button"
-            android:layout_alignParentStart="true"
             android:layout_marginLeft="50dp"
-            android:layout_marginStart="50dp" />
+            android:layout_marginStart="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageButton2"
-            android:layout_alignTop="@+id/imageButton3"
+            android:background="@drawable/gplus_login_button"
+            android:layout_alignTop="@+id/imageButton"
             android:layout_alignRight="@+id/textView3"
-            android:layout_alignEnd="@+id/textView3"
-            android:background="@drawable/gplus_login_button"/>
+            android:layout_alignEnd="@+id/textView3" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageButton3"
-            android:layout_centerVertical="true"
+            android:layout_marginRight="45dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/facebook_login_button"
+            android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="41dp"
-            android:layout_marginEnd="41dp"
-            android:background="@drawable/facebook_login_button"/>
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
 </LinearLayout>

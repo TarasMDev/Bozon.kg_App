@@ -18,6 +18,7 @@ public class MainActivity extends ActionBarActivity {
         //Hide actionBar for better GUI
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+
     }
 
     //Action for buttons
