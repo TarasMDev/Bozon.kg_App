@@ -23,4 +23,21 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_messages">Messages</string>
     <string name="title_activity_splash">BOZON</string>
+
+    <string name="Page1Title">Bozon</string>
+    <string name="Page2Title">Fast</string>
+    <string name="Page3Title">Free</string>
+    <string name="Page4Title">Secure</string>
+    <string name="Page5Title">Powerful</string>
+    <string name="Page6Title">Server-Based</string>
+    <string name="Page7Title">Private</string>
+    <string name="Page1Message">Уникальное <![CDATA[<b>приложение</b>]]> для торговли.<![CDATA[<br/>]]>Абсолютно <![CDATA[<b>бесплатно</b>]]> и <![CDATA[<b>защищено</b>]]>.</string>
+    <string name="Page2Message"><![CDATA[<b>Bozon</b>]]> Trade faster than with<![CDATA[<br/>]]>any other application.</string>
+    <string name="Page3Message"><![CDATA[<b>Bozon</b>]]> is free forever. No ads.<![CDATA[<br/>]]>No subscription fees.</string>
+    <string name="Page4Message"><![CDATA[<b>Bozon</b>]]> keeps your tradings safe<![CDATA[<br/>]]>from hacker attacks.</string>
+    <string name="Page5Message"><![CDATA[<b>Bozon</b>]]> has no limits on the size of<![CDATA[<br/>]]>tradings.</string>
+    <string name="Page6Message"><![CDATA[<b>Bozon</b>]]> lets you access your tradings<![CDATA[<br/>]]>from multiple devices.</string>
+    <string name="Page7Message"><![CDATA[<b>Bozon</b>]]> tradings are heavily encrypted<![CDATA[<br/>]]>and can hacked.</string>
+    <string name="StartMessaging">Start Using Bozon</string>
+    <string name="title_activity_intro">BOZON</string>
 </resources>

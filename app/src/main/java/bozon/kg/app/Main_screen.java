@@ -140,5 +140,10 @@ public class Main_screen extends ActionBarActivity {
         }
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
 
 }

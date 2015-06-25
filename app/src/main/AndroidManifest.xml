@@ -44,10 +44,11 @@
             android:label="@string/title_activity_messages" >
         </activity>
         <activity
-            android:name=".splash"
-            android:label="@string/title_activity_splash" >
+            android:name=".IntroActivity"
+            android:label="@string/title_activity_intro" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

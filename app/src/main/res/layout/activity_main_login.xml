@@ -72,13 +72,14 @@
 
         <Button
             android:id="@+id/btnLogin"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dip"
-            android:background="@color/btn_login_bg"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/regbtn_states"
             android:text="@string/btn_login"
-            android:textColor="@color/btn_login"
-            android:onClick="goHomeScreenView" />
+            android:textColor="@color/bg_register"
+            android:onClick="goHomeScreenView"
+            android:layout_gravity="center_horizontal" />
 
         <Button
             android:id="@+id/btnLinkToRegisterScreen"
