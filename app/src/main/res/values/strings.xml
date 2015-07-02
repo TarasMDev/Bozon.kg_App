@@ -40,4 +40,6 @@
     <string name="Page7Message"><![CDATA[<b>Bozon</b>]]> tradings are heavily encrypted<![CDATA[<br/>]]>and can hacked.</string>
     <string name="StartMessaging">Start Using Bozon</string>
     <string name="title_activity_intro">BOZON</string>
+    <string name="title_activity_edit_product">EditProductActivity</string>
+    <string name="title_activity_all_products">AllProductsActivity</string>
 </resources>

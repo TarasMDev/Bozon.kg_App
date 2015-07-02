@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import java.lang.reflect.Field;
 
@@ -19,6 +20,7 @@ public class Main_screen extends ActionBarActivity {
 
     //LOG_TAG variable
     private static final String LOG_TAG ="test";
+    Button button2;
 
     //Modifiezierte OnCreate Methode fur bessere ActionBar visualisation
     @Override
@@ -37,6 +39,17 @@ public class Main_screen extends ActionBarActivity {
         actionBar.setCustomView(R.layout.custom_action_bar);
 
         setContentView(R.layout.activity_main_screen);
+        button2 = (Button) findViewById(R.id.button2);
+        // обработчики
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Запускаем активность для просмотра все товаров
+                Intent intentAllProducts = new Intent(getApplicationContext(),
+                        AllProductsActivity.class);
+                startActivity(intentAllProducts);
+            }
+        });
     }
 
     //Modification fur ActionBar
@@ -76,16 +89,16 @@ public class Main_screen extends ActionBarActivity {
     }
 
 
-    public void goToCategoryScreenView(View v){
-        switch (v.getId()) {
-            case R.id.button2:
-                Intent intent = new Intent(this, Category.class);
-                startActivity(intent);
-                break;
-            default:
-                break;
-        }
-    }
+//    public void goToCategoryScreenView(View v){
+//        switch (v.getId()) {
+//            case R.id.button2:
+//                Intent intent = new Intent(this, AllProductsActivity.class);
+//                startActivity(intent);
+//                break;
+//            default:
+//                break;
+//        }
+//    }
 
     public void goToSellGoodsScreenView(View v){
         switch (v.getId()) {

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="bozon.kg.app" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -28,10 +30,6 @@
             android:label="@string/title_activity_notification" >
         </activity>
         <activity
-            android:name=".Category"
-            android:label="@string/title_activity_category" >
-        </activity>
-        <activity
             android:name=".Sell_goods"
             android:label="@string/title_activity_sell_goods" >
         </activity>
@@ -51,6 +49,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".EditProductActivity"
+            android:label="@string/title_activity_edit_product" >
+        </activity>
+        <activity
+            android:name=".AllProductsActivity"
+            android:label="@string/title_activity_all_products" >
         </activity>
     </application>
 
