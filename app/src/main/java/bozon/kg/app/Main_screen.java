@@ -13,13 +13,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import bozon.kg.app.My_Private_Profile;
+
 import java.lang.reflect.Field;
 
 
 public class Main_screen extends ActionBarActivity {
 
     //LOG_TAG variable
-    private static final String LOG_TAG ="test";
+    private static final String LOG_TAG = "test";
     Button button2;
 
     //Modifiezierte OnCreate Methode fur bessere ActionBar visualisation
@@ -77,7 +79,7 @@ public class Main_screen extends ActionBarActivity {
     }
 
     //Initialisation fur Tasten
-    public void goToMyProfileScreenView(View v){
+    public void goToMyProfileScreenView(View v) {
         switch (v.getId()) {
             case R.id.button:
                 Intent intent = new Intent(this, My_profile_bozon.class);
@@ -100,7 +102,7 @@ public class Main_screen extends ActionBarActivity {
 //        }
 //    }
 
-    public void goToSellGoodsScreenView(View v){
+    public void goToSellGoodsScreenView(View v) {
         switch (v.getId()) {
             case R.id.button3:
                 Intent intent = new Intent(this, Sell_goods.class);
@@ -111,7 +113,7 @@ public class Main_screen extends ActionBarActivity {
         }
     }
 
-    public void goToMessagesView(View v){
+    public void goToMessagesView(View v) {
         switch (v.getId()) {
             case R.id.button5:
                 Intent intent = new Intent(this, Messages.class);
@@ -122,10 +124,21 @@ public class Main_screen extends ActionBarActivity {
         }
     }
 
-    public void goToPrivateProfileView(View v){
+    public void goToPrivateProfileView(View v) {
         switch (v.getId()) {
             case R.id.button6:
                 Intent intent = new Intent(this, My_Private_Profile.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void goToScanView(View v) {
+        switch (v.getId()) {
+            case R.id.button7:
+                Intent intent = new Intent(this, ScanningActivity.class);
                 startActivity(intent);
                 break;
             default:

@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/bg_login"
+    android:background="@drawable/bglogoscreen"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingLeft="20dp"
+        android:background="@drawable/bg_input"
         android:paddingRight="20dp">
 
 
@@ -83,23 +84,34 @@
 
         <Button
             android:id="@+id/btnLinkToRegisterScreen"
-            android:layout_width="fill_parent"
+            android:layout_width="201dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dip"
-            android:background="@null"
+            android:background="@color/registerButton"
             android:text="@string/btn_link_to_register"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="15dp"
-            android:onClick="goToRegisterView" />
+            android:onClick="goToRegisterView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dip" />
 
     </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="92dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginBottom="-55dp">
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="-55dip"
+
+        android:layout_weight="0.23">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btn_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -116,29 +128,20 @@
             android:layout_height="wrap_content"
             android:id="@+id/imageButton"
             android:background="@drawable/twitter_login_button"
-            android:layout_marginLeft="50dp"
-            android:layout_marginStart="50dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageButton2"
-            android:background="@drawable/gplus_login_button"
-            android:layout_alignTop="@+id/imageButton"
-            android:layout_alignRight="@+id/textView3"
-            android:layout_alignEnd="@+id/textView3" />
+            android:layout_marginRight="46dp"
+            android:layout_marginEnd="46dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_sign_in"
+            android:layout_toStartOf="@+id/btn_sign_in" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageButton3"
-            android:layout_marginRight="45dp"
-            android:layout_marginEnd="45dp"
+            android:layout_marginRight="46dp"
+            android:layout_marginEnd="46dp"
             android:background="@drawable/facebook_login_button"
-            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
     </RelativeLayout>

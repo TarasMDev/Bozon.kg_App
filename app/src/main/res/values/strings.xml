@@ -23,7 +23,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_messages">Messages</string>
     <string name="title_activity_splash">BOZON</string>
-
+    <string name="scanProd">Сканировать товар</string>
+    <string name="scan">Сканировать</string>
     <string name="Page1Title">Bozon</string>
     <string name="Page2Title">Fast</string>
     <string name="Page3Title">Free</string>
@@ -42,4 +43,8 @@
     <string name="title_activity_intro">BOZON</string>
     <string name="title_activity_edit_product">EditProductActivity</string>
     <string name="title_activity_all_products">AllProductsActivity</string>
+    <string name="title_activity_scanning">Scan Product here</string>
+    <!-- Button text -->
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
 </resources>
