@@ -4,9 +4,11 @@
     android:layout_height="wrap_content"
     android:weightSum="1">
 
-    <ImageView
-        android:id="@+id/ivLogo"
+
+    <ImageButton
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:src="@drawable/logo"/>
+        android:background="@drawable/logo"
+        android:id="@+id/imageButton"
+        />
 </LinearLayout>

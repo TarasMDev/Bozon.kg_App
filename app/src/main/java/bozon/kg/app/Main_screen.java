@@ -82,7 +82,7 @@ public class Main_screen extends ActionBarActivity {
     public void goToMyProfileScreenView(View v) {
         switch (v.getId()) {
             case R.id.button:
-                Intent intent = new Intent(this, My_profile_bozon.class);
+                Intent intent = new Intent(this, My_Private_Profile.class);
                 startActivity(intent);
                 break;
             default:

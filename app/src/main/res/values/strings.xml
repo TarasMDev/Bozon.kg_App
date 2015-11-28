@@ -47,4 +47,6 @@
     <!-- Button text -->
     <string name="btn_logout_from_google">Logout from Google</string>
     <string name="btn_revoke_access">Revoke Access</string>
+    <string name="title_activity_action__bar_activity">Action_Bar_activity</string>
+    <string name="title_activity_test_activity_for_swap">TestActivityForSwap</string>
 </resources>

@@ -16,21 +16,25 @@
         android:id="@+id/imageView2"
         android:background="@drawable/login_logo"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="-64dp" />
+        android:layout_marginTop="-44dp" />
 
     <LinearLayout
-        android:layout_width="365dp"
+        android:layout_width="317dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingLeft="20dp"
         android:background="@drawable/bg_input"
-        android:paddingRight="20dp">
+        android:paddingRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.18"
+        android:weightSum="1">
 
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/textInputLayoutEmail"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="1dp">
         <EditText
             android:id="@+id/email"
@@ -50,7 +54,7 @@
         <android.support.design.widget.TextInputLayout
             android:id="@+id/textInputLayoutPassword"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="1dp">
         <EditText
             android:id="@+id/password"
@@ -82,36 +86,24 @@
             android:onClick="goHomeScreenView"
             android:layout_gravity="center_horizontal" />
 
-        <Button
-            android:id="@+id/btnLinkToRegisterScreen"
-            android:layout_width="201dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dip"
-            android:background="@color/registerButton"
-            android:text="@string/btn_link_to_register"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="15dp"
-            android:onClick="goToRegisterView"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dip" />
-
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="92dp"
-        android:layout_marginTop="15dip"
-        android:layout_marginBottom="-55dip"
-
-        android:layout_weight="0.23">
-
         <com.google.android.gms.common.SignInButton
             android:id="@+id/btn_sign_in"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="-55dip"
+
+        android:layout_weight="0.17">
 
         <TextView
             android:layout_width="wrap_content"
@@ -123,26 +115,19 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/btnLinkToRegisterScreen"
+            android:layout_width="201dp"
             android:layout_height="wrap_content"
-            android:id="@+id/imageButton"
-            android:background="@drawable/twitter_login_button"
-            android:layout_marginRight="46dp"
-            android:layout_marginEnd="46dp"
+            android:background="@color/registerButton"
+            android:text="@string/btn_link_to_register"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:onClick="goToRegisterView"
+            android:layout_gravity="center_horizontal"
             android:layout_centerVertical="true"
-            android:layout_toLeftOf="@+id/btn_sign_in"
-            android:layout_toStartOf="@+id/btn_sign_in" />
+            android:layout_centerHorizontal="true" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageButton3"
-            android:layout_marginRight="46dp"
-            android:layout_marginEnd="46dp"
-            android:background="@drawable/facebook_login_button"
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
     </RelativeLayout>
 </LinearLayout>
