@@ -1,55 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="bozon.kg.app" >
+    package="bozon.kg.app">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
 
     <application
+        android:name=".AppControl"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
-        </activity>
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Register"
-            android:label="@string/title_activity_register" >
-        </activity>
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Main_screen"
-            android:label="@string/title_activity_login" >
-        </activity>
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".My_profile_bozon"
-            android:label="@string/title_activity_my_profile" >
-        </activity>
+            android:label="@string/title_activity_my_profile"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".NotificationBozon"
-            android:label="@string/title_activity_notification" >
-        </activity>
+            android:label="@string/title_activity_notification"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Sell_goods"
-            android:label="@string/title_activity_sell_goods" >
-        </activity>
+            android:label="@string/title_activity_sell_goods"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".My_Private_Profile"
-            android:label="@string/title_activity_my__private__profile" >
-        </activity>
+            android:label="@string/title_activity_my__private__profile"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Messages"
-            android:label="@string/title_activity_messages" >
-        </activity>
+            android:label="@string/title_activity_messages"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".IntroActivity"
-            android:label="@string/title_activity_intro" >
+            android:label="@string/title_activity_intro">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -57,21 +59,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EditProductActivity"
-            android:label="@string/title_activity_edit_product" >
-        </activity>
-        <activity
-            android:name=".AllProductsActivity"
-            android:label="@string/title_activity_all_products" >
-        </activity>
+            android:name=".AppProductsActivity"
+            android:label="@string/title_activity_all_products"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ScanningActivity"
-            android:label="@string/title_activity_scanning" >
-        </activity>
+            android:label="@string/title_activity_scanning"
+            android:screenOrientation="portrait" />
+
         <activity
-            android:name=".TestActivityForSwap"
-            android:label="@string/title_activity_test_activity_for_swap" >
-        </activity>
+            android:name=".Drawer"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

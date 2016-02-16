@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/bglogoscreen"
+    android:background="@drawable/bglogoscreen3"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
@@ -11,23 +11,23 @@
 
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:id="@+id/imageView2"
-        android:background="@drawable/login_logo"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="-44dp" />
+        android:layout_marginTop="-44dp"
+        android:background="@drawable/login_logo" />
 
     <LinearLayout
         android:layout_width="317dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="20dp"
-        android:background="@drawable/bg_input"
-        android:paddingRight="20dp"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
         android:layout_weight="0.18"
+        android:background="@drawable/bg_input"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:weightSum="1">
 
 
@@ -79,55 +79,53 @@
             android:id="@+id/btnLogin"
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/regbtn_states"
-            android:text="@string/btn_login"
-            android:textColor="@color/bg_register"
-            android:onClick="goHomeScreenView"
-            android:layout_gravity="center_horizontal" />
-
-        <com.google.android.gms.common.SignInButton
-            android:id="@+id/btn_sign_in"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/regbtn_states"
+            android:onClick="goHomeScreenView"
+            android:textColor="@color/bg_register" />
+
+        <Button
+            android:id="@+id/btnLinkToRegisterScreen"
+            android:layout_width="279dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/registerButton"
+            android:onClick="goToRegisterView"
+            android:text="@string/btn_link_to_register"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
 
     </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="82dp"
-        android:layout_marginTop="15dip"
         android:layout_marginBottom="-55dip"
+        android:layout_marginTop="15dip"
 
         android:layout_weight="0.17">
 
-        <TextView
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btn_sign_in"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Или"
-            android:id="@+id/textView3"
-            android:textColor="#fffff1ef"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
-
-        <Button
-            android:id="@+id/btnLinkToRegisterScreen"
-            android:layout_width="201dp"
-            android:layout_height="wrap_content"
-            android:background="@color/registerButton"
-            android:text="@string/btn_link_to_register"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="15dp"
-            android:onClick="goToRegisterView"
-            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Войти с помощью..."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
     </RelativeLayout>
 </LinearLayout>

@@ -2,7 +2,7 @@
     <string name="app_name">BOZON</string>
     <string name="action_settings">Настройки</string>
     <string name="title_activity_register">Регистрация</string>
-    <string name="title_activity_login">Добро пожаловать!</string>
+    <string name="title_activity_login">BOZON</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Пароль</string>
     <string name="hint_name">Имя</string>
@@ -19,7 +19,18 @@
     <string name="title_activity_sell_goods">Продать товар</string>
     <string name="action_notif">notif</string>
     <string name="title_activity_my__private__profile">My_Private_Profile</string>
-
+    <!-- NavDrawer section-->
+    <string name="drawer_item_home">Уведомления</string>
+    <string name="drawer_item_free_play">Сообщения</string>
+    <string name="drawer_item_custom"></string>
+    <string name="drawer_item_settings">Меню</string>
+    <string name="drawer_item_help">Help</string>
+    <string name="drawer_item_open_source">Open Source</string>
+    <string name="drawer_item_contact">Выход</string>
+    <string name="drawer_item_profile_information">Инфо о профиле</string>
+    <string name="title_activity_second">second</string>
+    <string name="title_activity_third">Third</string>
+    <!-- Intro section-->
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_messages">Messages</string>
     <string name="title_activity_splash">BOZON</string>
@@ -32,10 +43,10 @@
     <string name="Page5Title">Powerful</string>
     <string name="Page6Title">Server-Based</string>
     <string name="Page7Title">Private</string>
-    <string name="Page1Message">Уникальное <![CDATA[<b>приложение</b>]]> для торговли.<![CDATA[<br/>]]>Абсолютно <![CDATA[<b>бесплатно</b>]]> и <![CDATA[<b>защищено</b>]]>.</string>
-    <string name="Page2Message"><![CDATA[<b>Bozon</b>]]> Trade faster than with<![CDATA[<br/>]]>any other application.</string>
-    <string name="Page3Message"><![CDATA[<b>Bozon</b>]]> is free forever. No ads.<![CDATA[<br/>]]>No subscription fees.</string>
-    <string name="Page4Message"><![CDATA[<b>Bozon</b>]]> keeps your tradings safe<![CDATA[<br/>]]>from hacker attacks.</string>
+    <string name="Page1Message">Уникальное <![CDATA[<b>приложение</b>]]> для торговли.<![CDATA[<br/>]]>Абсолютно <![CDATA[<b>бесплатно</b>]]> и <![CDATA[<b>защищено</b>]]>.<![CDATA[<b>Все для вас и вашего дома</b>]]></string>
+    <string name="Page2Message"><![CDATA[<b>Bozon</b>]]> Мы знаем что вам нужно.<![CDATA[<br/>]]>Здесь вы найдете все!<![CDATA[<br/>]]>Качественно и по низким ценам</string>
+    <string name="Page3Message"><![CDATA[<b>Bozon</b>]]> Лучшие смартфоны и планшеты<![CDATA[<br/>]]>От лучших компаний мира<![CDATA[<br/>]]>Вы найдете то,что искали</string>
+    <string name="Page4Message"><![CDATA[<b>Bozon</b>]]> Мебель на любой вкус и цвет<![CDATA[<br/>]]>Качество превыше всего<![CDATA[<br/>]]>По качественно и низким ценам</string>
     <string name="Page5Message"><![CDATA[<b>Bozon</b>]]> has no limits on the size of<![CDATA[<br/>]]>tradings.</string>
     <string name="Page6Message"><![CDATA[<b>Bozon</b>]]> lets you access your tradings<![CDATA[<br/>]]>from multiple devices.</string>
     <string name="Page7Message"><![CDATA[<b>Bozon</b>]]> tradings are heavily encrypted<![CDATA[<br/>]]>and can hacked.</string>
@@ -49,4 +60,7 @@
     <string name="btn_revoke_access">Revoke Access</string>
     <string name="title_activity_action__bar_activity">Action_Bar_activity</string>
     <string name="title_activity_test_activity_for_swap">TestActivityForSwap</string>
+    <string name="title_activity_drawer">Drawer</string>
+    <string name="title_activity_test_one">test_one</string>
+    <string name="test">Test text string</string>
 </resources>

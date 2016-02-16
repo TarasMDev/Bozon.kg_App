@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.materialtabs.fragments.TwoFragment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="76dp"
+        android:text="О компании"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_about_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="91dp"
+        android:text="Rem.kg это информационная площадка, на которой вы можете найти абсолютно всех поставщиков товаров и услуг на рынке строительства, строительных материалов, ремонта и обустройства.Объявления здесь могут добавлять все участники рынка. Также уникальные предложения собирает администрация сайта, поэтому здесь можно найти все!
+
+Здесь можно найти всё от цемента до лампочки, от гравия до стиральной машинки, от услуг сантехника до услуг ландшафтного дизайна и проектирования. Rem.kg - единственные, кто в полном масштабе объединяет рынок строительства, ремонта и обустройства.
+
+Rem.kg – это все, что вам нужно, собранное в одном месте."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000" />
+
+</RelativeLayout>

@@ -1,14 +1,21 @@
 package bozon.kg.app;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,6 +25,15 @@ import com.google.android.gms.plus.Plus;
 import com.google.android.gms.plus.model.people.Person;
 
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+import fragments.FiveFragment;
+import fragments.FourFragment;
+import fragments.OneFragment;
+import fragments.SixFragment;
+import fragments.ThreeFragment;
+import fragments.TwoFragment;
 
 
 public class My_Private_Profile extends MainActivity {
@@ -26,6 +42,8 @@ public class My_Private_Profile extends MainActivity {
     private TextView textView_name, textView_email;
     private RelativeLayout profile_layout;
     private ImageView imageView_profile_image;
+    private ViewPager viewPager;
+    private TabLayout tabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +60,13 @@ public class My_Private_Profile extends MainActivity {
         textView_name = (TextView) findViewById(R.id.textView_name);
         textView_email = (TextView) findViewById(R.id.textView_email);
         profile_layout = (RelativeLayout) findViewById(R.id.profile_layout);
+
+        viewPager = (ViewPager) findViewById(R.id.viewpager);
+        setupViewPager(viewPager);
+
+        tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
+        setupTabIcons();
     }
 
     @Override
@@ -61,6 +86,17 @@ public class My_Private_Profile extends MainActivity {
                 break;
         }
 
+    }
+
+    public void pressSendMessageButton(View v) {
+        switch (v.getId()) {
+            case R.id.imageButton_send_message:
+                Toast.makeText(getApplicationContext(),
+                        "Message Send...Work in progress", Toast.LENGTH_LONG).show();
+                break;
+            default:
+                break;
+        }
     }
 
     public void onConnected(Bundle connectionHint) {
@@ -127,6 +163,36 @@ public class My_Private_Profile extends MainActivity {
         }
     }
 
+    private void setupTabIcons() {
+        int[] tabIcons = {
+                R.drawable.tab1,
+                R.drawable.tab2,
+                R.drawable.tab3,
+                R.drawable.tab4,
+                R.drawable.tab5,
+                R.drawable.tab6
+
+        };
+
+        tabLayout.getTabAt(0).setIcon(tabIcons[0]);
+        tabLayout.getTabAt(1).setIcon(tabIcons[1]);
+        tabLayout.getTabAt(2).setIcon(tabIcons[2]);
+        tabLayout.getTabAt(3).setIcon(tabIcons[3]);
+        tabLayout.getTabAt(4).setIcon(tabIcons[4]);
+        tabLayout.getTabAt(5).setIcon(tabIcons[5]);
+    }
+
+    private void setupViewPager(ViewPager viewPager) {
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFrag(new OneFragment(), "ONE");
+        adapter.addFrag(new TwoFragment(), "TWO");
+        adapter.addFrag(new ThreeFragment(), "THREE");
+        adapter.addFrag(new FourFragment(), "FOUR");
+        adapter.addFrag(new FiveFragment(), "FIVE");
+        adapter.addFrag(new SixFragment(), "SIX");
+        viewPager.setAdapter(adapter);
+    }
+
     /**
      * Background Async task to load user profile picture from url
      */
@@ -152,6 +218,37 @@ public class My_Private_Profile extends MainActivity {
 
         protected void onPostExecute(Bitmap result) {
             bmImage.setImageBitmap(result);
+        }
+    }
+
+    class ViewPagerAdapter extends FragmentPagerAdapter {
+        private final List<Fragment> mFragmentList = new ArrayList<>();
+        private final List<String> mFragmentTitleList = new ArrayList<>();
+
+        public ViewPagerAdapter(FragmentManager manager) {
+            super(manager);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return mFragmentList.get(position);
+        }
+
+        @Override
+        public int getCount() {
+            return mFragmentList.size();
+        }
+
+        public void addFrag(Fragment fragment, String title) {
+            mFragmentList.add(fragment);
+            mFragmentTitleList.add(title);
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+
+            // return null to display only the icon
+            return null;
         }
     }
 

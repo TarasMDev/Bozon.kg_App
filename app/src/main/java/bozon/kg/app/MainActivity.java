@@ -36,12 +36,14 @@ import java.io.InputStream;
 public class MainActivity extends ActionBarActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, View.OnClickListener {
 
     private static final int GOOGLE_SIGIN = 100;
+    public static GoogleApiClient mGoogleApiClient;
     public String TAG = "test";
-    public GoogleApiClient mGoogleApiClient;
     public SignInButton btnSignIn;
     public boolean mIntentInProgress;
     public boolean mSignInClicked;
     public ConnectionResult mConnectionResult;
+    //custom variable
+    public int a = 42;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,25 +60,16 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
                 .addOnConnectionFailedListener(this).addApi(Plus.API)
                 .addScope(Plus.SCOPE_PLUS_LOGIN).build();
 
-        //Hide actionBar for better GUI
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
-
-
     }
 
     @Override
     public void onClick(View v) {
-
         switch (v.getId()) {
             case R.id.btn_sign_in:
                 // Signin button clicked
                 signInWithGplus();
                 break;
-
-
         }
-
     }
 
     protected void onStart() {

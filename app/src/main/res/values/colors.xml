@@ -20,6 +20,11 @@
     <color name="deep_orange">#cf5607</color>
     <color name="orange">#f17b00</color>
     <color name="blue">#0c3054</color>
+    <color name="app_theme_one">#000000</color>
+    <color name="click_start_color">#FF5722</color>
+    <color name="click_end_color">#b1afa0</color>
+    <color name="click_end_color_bg">#77efede8</color>
+    <color name="click_start_color_bg">#77efede8</color>
 
 
 </resources>

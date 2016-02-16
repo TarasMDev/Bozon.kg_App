@@ -1,141 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profile_layout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:id="@+id/profile_layout"
-    android:background="@drawable/bglogoscreen"
-    android:layout_below="@+id/btn_sign_in"
     android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/btn_sign_in"
 
-    android:layout_alignParentStart="true">
+    android:background="@drawable/background_profile">
 
 
     <Button
+        android:id="@+id/button_revoke"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Revoke"
-        android:id="@+id/button_revoke"
-        android:layout_alignTop="@+id/button_logout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button_logout"
         android:layout_marginLeft="37dp"
-        android:layout_marginStart="37dp" />
+        android:layout_marginStart="37dp"
+        android:text="Revoke"
+        android:visibility="invisible" />
 
     <Button
+        android:id="@+id/button_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LogOut"
-        android:id="@+id/button_logout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_gravity="bottom"
         android:layout_marginLeft="35dp"
         android:layout_marginStart="35dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_toEndOf="@+id/textView" />
+        android:text="LogOut"
+        android:visibility="invisible" />
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+
+        android:layout_height="125dp"
         android:layout_alignParentEnd="true"
-        android:background="@drawable/shape_for_profile"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:id="@+id/relativeLayout"
-        android:layout_marginLeft="5dip"
-        android:layout_marginRight="5dip">
+        android:layout_marginLeft="5dip">
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
             android:id="@+id/imageView_profile_image"
-
-            android:layout_toLeftOf="@+id/textView_email"
-            android:layout_toStartOf="@+id/textView_email" />
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:text="Email"
             android:id="@+id/textView_email"
-            android:layout_marginTop="40dp"
-            android:layout_below="@+id/textView_name"
-            android:layout_centerHorizontal="true" />
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView_name"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_marginRight="-78dp"
+            android:layout_marginTop="33dp"
+            android:drawableLeft="@drawable/e_mail_profile"
+            android:text="Email"
+            android:textColor="#000000" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Name"
             android:id="@+id/textView_name"
-
-
-            android:layout_marginTop="37dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignRight="@+id/textView_email"
-            android:layout_alignEnd="@+id/textView_email" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dip"
-        android:layout_below="@+id/relativeLayout"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/shape_for_profile"
-        android:layout_above="@+id/button_revoke"
-        android:layout_marginTop="40dip"
-        android:id="@+id/relativeLayout2"
-        android:layout_marginBottom="190dip"
-        android:layout_marginLeft="5dip"
-        android:layout_marginRight="5dip">
-
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Тестовая улица. г.Бишкек"
-            android:id="@+id/textView2"
+            android:layout_alignLeft="@+id/textView_phone"
+            android:layout_alignStart="@+id/textView_phone"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/user_profile"
+            android:text="Name"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageView_profile_image"
+            android:layout_alignRight="@+id/imageView_profile_image"
+            android:layout_below="@+id/imageView_profile_image"
+            android:background="@drawable/rating_stars" />
+
+        <TextView
+            android:id="@+id/textView_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
+            android:drawableLeft="@drawable/phone_profile"
+            android:text="+996(777) 17-99-22"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView_small_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignLeft="@+id/textView_phone"
+            android:layout_alignStart="@+id/textView_phone"
+            android:drawableLeft="@drawable/marker_map_profile"
+            android:text="ул.Льва Толстого 100/1,офис 404"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/imageButton_send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_small_adress"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView_small_adress"
+            android:background="@drawable/send_message_profile"
+            android:onClick="pressSendMessageButton" />
+
     </RelativeLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Адресс"
-        android:id="@+id/textView"
-        android:layout_alignTop="@+id/relativeLayout2"
-        android:layout_centerHorizontal="true" />
-
-    <RelativeLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/shape_for_profile"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="400dip"
-        android:layout_marginBottom="50dip"
-        android:layout_marginLeft="5dip"
-        android:layout_marginRight="5dip">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_toEndOf="@+id/button_revoke">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Рейтинг"
-            android:id="@+id/textView4"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_marginTop="15dp"
+            app:tabGravity="fill"
+            app:tabMode="fixed" />
 
-        <RatingBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/ratingBar"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
-    </RelativeLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_for_profile"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </FrameLayout>
 
 
 </RelativeLayout>

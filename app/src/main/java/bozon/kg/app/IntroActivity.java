@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.database.DataSetObserver;
 import android.graphics.Color;
+import android.media.Image;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v4.view.PagerAdapter;
@@ -34,8 +35,8 @@ public class IntroActivity extends Activity {
     private boolean justCreated = false;
     private boolean startPressed = false;
     private int[] icons;
-    private int[] titles;
     private int[] messages;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,20 +49,11 @@ public class IntroActivity extends Activity {
                 R.drawable.intro1,
                 R.drawable.intro2,
                 R.drawable.intro3,
-                R.drawable.intro4,
-                R.drawable.intro5,
-                R.drawable.intro6,
-                R.drawable.intro7
+                R.drawable.intro4
+
         };
-        titles = new int[] {
-                R.string.Page1Title,
-                R.string.Page2Title,
-                R.string.Page3Title,
-                R.string.Page4Title,
-                R.string.Page5Title,
-                R.string.Page6Title,
-                R.string.Page7Title
-        };
+
+
         messages = new int[] {
                 R.string.Page1Message,
                 R.string.Page2Message,
@@ -74,12 +66,14 @@ public class IntroActivity extends Activity {
 
         viewPager = (ViewPager)findViewById(R.id.intro_view_pager);
         TextView startMessagingButton = (TextView) findViewById(R.id.start_messaging_button);
-        startMessagingButton.setText("НАЧАТЬ");
+        startMessagingButton.setText("");
 
         topImage1 = (ImageView)findViewById(R.id.icon_image1);
         topImage2 = (ImageView)findViewById(R.id.icon_image2);
+
         bottomPages = (ViewGroup)findViewById(R.id.bottom_pages);
         topImage2.setVisibility(View.GONE);
+
         viewPager.setAdapter(new IntroAdapter());
         viewPager.setPageMargin(0);
         viewPager.setOffscreenPageLimit(1);
@@ -102,6 +96,8 @@ public class IntroActivity extends Activity {
 
                         final ImageView fadeoutImage;
                         final ImageView fadeinImage;
+
+
                         if (topImage1.getVisibility() == View.VISIBLE) {
                             fadeoutImage = topImage1;
                             fadeinImage = topImage2;
@@ -190,7 +186,7 @@ public class IntroActivity extends Activity {
     private class IntroAdapter extends PagerAdapter {
         @Override
         public int getCount() {
-            return 7;
+            return 4;
         }
 
 
@@ -244,11 +240,11 @@ public class IntroActivity extends Activity {
         @Override
         public Object instantiateItem(ViewGroup container, int position) {
             View view = View.inflate(container.getContext(), R.layout.intro_view_layout, null);
-            TextView headerTextView = (TextView)view.findViewById(R.id.header_text);
+
             TextView messageTextView = (TextView)view.findViewById(R.id.message_text);
             container.addView(view, 0);
 
-            headerTextView.setText(getString(titles[position]));
+
             messageTextView.setText(this.replaceTags(getString(messages[position])));
 
             return view;
