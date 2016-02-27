@@ -5,7 +5,7 @@
     android:background="@drawable/background_profile"
     android:paddingLeft="1dp"
     android:paddingRight="1dp"
-    tools:context=".AppProductsActivity">
+    tools:context="bozon.kg.com.AppProductsActivity">
 
     <ListView
         android:id="@+id/list_item"
