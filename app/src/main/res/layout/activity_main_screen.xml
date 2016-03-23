@@ -2,9 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:gravity="center"
     android:background="@drawable/backgroundmain1"
-    tools:context="bozon.kg.app.Main_screen">
+    tools:context="bozon.kg.com.Main_screen">
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -90,7 +92,7 @@
         android:layout_alignStart="@+id/button3"
         android:layout_marginBottom="15dp"
         android:background="@drawable/scangbutton"
-        android:onClick="onClickScan" />
+        android:onClick="goToScanView" />
 
     <!--
 

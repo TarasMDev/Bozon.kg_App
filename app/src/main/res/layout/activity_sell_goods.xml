@@ -65,4 +65,12 @@
         android:layout_height="wrap_content"
         android:text="Создать обьявление" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Test"
+        android:id="@+id/text_test4567"
+        android:layout_gravity="center_horizontal" />
+
 </LinearLayout>

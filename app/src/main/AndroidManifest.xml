@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="bozon.kg.app">
+    package="com.bozon.kg.app">
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
 
     <application
-        android:name=".AppControl"
+        android:name="com.bozon.kg.app.AppControl"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -18,40 +23,9 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.bozon.kg.app.MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Register"
-            android:label="@string/title_activity_register"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Main_screen"
-            android:label="@string/title_activity_login"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".My_profile_bozon"
-            android:label="@string/title_activity_my_profile"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".NotificationBozon"
-            android:label="@string/title_activity_notification"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Sell_goods"
-            android:label="@string/title_activity_sell_goods"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".My_Private_Profile"
-            android:label="@string/title_activity_my__private__profile"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Messages"
-            android:label="@string/title_activity_messages"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".IntroActivity"
-            android:label="@string/title_activity_intro">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -59,16 +33,54 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AppProductsActivity"
-            android:label="@string/title_activity_all_products"
+            android:name="com.bozon.kg.app.Register"
+            android:label="@string/title_activity_register"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ScanningActivity"
-            android:label="@string/title_activity_scanning"
+            android:name="com.bozon.kg.app.Main_screen"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bozon.kg.app.My_profile_bozon"
+            android:label="@string/title_activity_my_profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bozon.kg.app.NotificationBozon"
+            android:label="@string/title_activity_notification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bozon.kg.app.Sell_goods"
+            android:label="@string/title_activity_sell_goods"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bozon.kg.app.My_Private_Profile"
+            android:label="@string/title_activity_my__private__profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bozon.kg.app.Messages"
+            android:label="@string/title_activity_messages"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bozon.kg.app.IntroActivity"
+            android:label="@string/title_activity_intro">
+        </activity>
+        <activity
+            android:name="com.bozon.kg.app.AppProductsActivity"
+            android:label="@string/title_activity_all_products"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".Drawer"
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.bozon.kg.app.Drawer"
             android:label="@string/title_activity_drawer"
             android:theme="@style/AppTheme" />
     </application>
