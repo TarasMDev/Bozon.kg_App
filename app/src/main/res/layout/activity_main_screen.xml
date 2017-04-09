@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
-    android:gravity="center"
     android:background="@drawable/backgroundmain1"
-    tools:context="bozon.kg.com.Main_screen">
+    android:gravity="center">
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/adv_pager"
         android:layout_width="match_parent"
         android:layout_height="220dp"
-        android:layout_below="@+id/toolbar"
-        android:background="@drawable/slider">
+        android:layout_below="@+id/toolbar"></android.support.v4.view.ViewPager>
 
-    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/viewGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adv_pager"
+        android:layout_marginTop="-25px"
+        android:gravity="right"
+        android:orientation="horizontal"></LinearLayout>
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -36,7 +44,7 @@
         android:layout_alignParentRight="true"
 
 
-        android:layout_below="@+id/frameLayout"
+        android:layout_below="@+id/adv_pager"
 
 
         android:layout_marginEnd="38dp"

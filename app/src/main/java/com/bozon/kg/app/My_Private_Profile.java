@@ -111,7 +111,9 @@ public class My_Private_Profile extends MainActivity {
         String email = Plus.AccountApi.getAccountName(mGoogleApiClient);
         textView_name.setText(personName);
         textView_email.setText(email);
-
+        if (personName == null) {
+            throw new NullPointerException("PersonName can't be null");
+        }
         // by default the profile url gives 50x50 px image only
         // we can replace the value with whatever dimension we want by
         // replacing sz=X
@@ -121,7 +123,7 @@ public class My_Private_Profile extends MainActivity {
 
         new LoadProfileImage(imageView_profile_image).execute(personPhotoUrl);
         Toast.makeText(getApplicationContext(),
-                "Information is loaded", Toast.LENGTH_LONG).show();
+                "Информация загружена", Toast.LENGTH_LONG).show();
     }
 
 

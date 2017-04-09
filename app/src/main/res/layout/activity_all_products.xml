@@ -5,7 +5,7 @@
     android:background="@drawable/bglogoscreen4"
     android:paddingLeft="1dp"
     android:paddingRight="1dp"
-    tools:context="bozon.kg.com.AppProductsActivity">
+    >
 
     <ListView
         android:id="@+id/list_item"
@@ -15,5 +15,7 @@
         android:listSelector="@drawable/list_row_select">
 
     </ListView>
+
+
 
 </RelativeLayout>

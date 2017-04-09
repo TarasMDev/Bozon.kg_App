@@ -77,14 +77,15 @@
 
         <Button
             android:id="@+id/btnLogin"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
+            android:layout_width="279dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-
-            android:background="@drawable/regbtn_states"
+            android:background="@color/registerButton"
             android:onClick="goHomeScreenView"
-            android:textColor="@color/bg_register" />
+            android:text="@string/btn_login_main"
+            android:textColor="@color/white"
+            />
 
         <Button
             android:id="@+id/btnLinkToRegisterScreen"
@@ -96,7 +97,7 @@
             android:background="@color/registerButton"
             android:onClick="goToRegisterView"
             android:text="@string/btn_link_to_register"
-            android:textAllCaps="false"
+            android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="15dp" />
 
@@ -125,7 +126,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:text="Войти с помощью..."
+            android:text="Войти с помощью G+"
             android:textAppearance="?android:attr/textAppearanceMedium" />
     </RelativeLayout>
 </LinearLayout>

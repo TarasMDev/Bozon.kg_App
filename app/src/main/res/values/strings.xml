@@ -6,12 +6,13 @@
     <string name="hint_email">Email</string>
     <string name="hint_password">Пароль</string>
     <string name="hint_name">Имя</string>
-    <string name="btn_login">Вход</string>
+    <string name="btn_login_main">Начать</string>
     <string name="btn_register">РЕГИСТРАЦИЯ</string>
     <string name="btn_link_to_register">Зарегистрироваться</string>
     <string name="btn_link_to_login">Уже зарегистрирован! Войти.</string>
     <string name="welcome">Welcome</string>
     <string name="btn_logout">Выйти</string>
+
     <string name="name">Имя</string>
     <string name="title_activity_my_profile">Личный кабинет</string>
     <string name="title_activity_notification">Уведомления</string>
@@ -188,4 +189,5 @@
     <string name="result_wifi">Найдена конфигурация сети</string>
     <string name="sbc_name">Поиск книг Google</string>
     <string name="wifi_changing_network">Запрос подключения к сети\u2026</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

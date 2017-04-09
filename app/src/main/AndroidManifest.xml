@@ -2,17 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bozon.kg.app">
 
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
-        android:name="com.bozon.kg.app.AppControl"
+        android:name=".AppControl"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -23,7 +19,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name="com.bozon.kg.app.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -33,56 +29,69 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.bozon.kg.app.Register"
+            android:name=".Register"
             android:label="@string/title_activity_register"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.bozon.kg.app.Main_screen"
+            android:name=".Main_screen"
             android:label="@string/title_activity_login"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.bozon.kg.app.My_profile_bozon"
+            android:name=".My_profile_bozon"
             android:label="@string/title_activity_my_profile"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.bozon.kg.app.NotificationBozon"
+            android:name=".NotificationBozon"
             android:label="@string/title_activity_notification"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.bozon.kg.app.Sell_goods"
+            android:name=".Sell_goods"
             android:label="@string/title_activity_sell_goods"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.bozon.kg.app.My_Private_Profile"
+            android:name=".My_Private_Profile"
             android:label="@string/title_activity_my__private__profile"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.bozon.kg.app.Messages"
+            android:name=".Messages"
             android:label="@string/title_activity_messages"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.bozon.kg.app.IntroActivity"
-            android:label="@string/title_activity_intro">
-        </activity>
+            android:name=".IntroActivity"
+            android:label="@string/title_activity_intro"></activity>
         <activity
-            android:name="com.bozon.kg.app.AppProductsActivity"
+            android:name=".AppProductsActivity"
             android:label="@string/title_activity_all_products"
             android:screenOrientation="portrait" />
-
         <activity
             android:name="com.google.zxing.client.android.CaptureActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="com.google.zxing.client.android.SCAN" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name="com.bozon.kg.app.Drawer"
+            android:name=".Drawer"
             android:label="@string/title_activity_drawer"
             android:theme="@style/AppTheme" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
     </application>
 
 </manifest>
